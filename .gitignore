@@ -2,8 +2,11 @@
 data/
 models/
 mlflow.db
+refrence_notebooks/
 __pycache__/
 .ipynb_checkpoints/
+notebooks/3. Model_senior.ipynb
+submissions/
 =======
 # Byte-compiled / optimized / DLL files
 __pycache__/
