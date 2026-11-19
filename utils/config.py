@@ -33,3 +33,20 @@ RATING_COLS = [
 CAT_COLS = ["Gender", "Customer Type", "Type of Travel", "Class"]
 FEATURED_RAW = NUM_COLS + RATING_COLS + CAT_COLS
 ENGINEERED = ["customer_rating","delay_diff","airplane_comfort"]
+
+LGBM_PARAMS = dict(
+    objective="binary",
+    n_estimators=1000,
+    learning_rate=0.02,
+    num_leaves=63,
+    max_depth=8,
+    min_child_samples=5,
+    reg_lambda=5.0,
+    reg_alpha=0.05,
+    subsample=0.9,
+    subsample_freq=1,
+    colsample_bytree=0.9,
+    random_state=RANDOM_STATE,
+    n_jobs=-1,
+    verbose=-1,
+)
